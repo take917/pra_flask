@@ -6,12 +6,14 @@
 
 
 2. Navigate to the project directory
-- cd your project folder
+- cd your project folder 
 
-3.Create a virtual environment
+
+3. Create a virtual environment
 - python3 -m venv directoryname
 
-4.Passing zsh 
+
+4. Passing zsh 
 - export FLASK_APP=app 
 - app = main　py file
 
