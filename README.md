@@ -1,6 +1,5 @@
 # test1
 
-
 ### make environment
 - mkdir your project folder
 - cd your project folder
@@ -11,4 +10,4 @@
 ### start
 - cd your project folder
 -  . venv/bin/activate
--  
+-  flask run
