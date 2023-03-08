@@ -21,3 +21,8 @@
 - cd your project folder
 -  . venv/bin/activate
 -  flask run
+
+
+### finish
+- ctrl + c
+- deactivate
