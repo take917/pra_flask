@@ -13,7 +13,7 @@
 
 4.Passing zsh 
 - export FLASK_APP=app 
--- app = main　py file
+- app = main　py file
 
 ### start
 - cd your project folder
