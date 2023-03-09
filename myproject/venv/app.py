@@ -1,24 +1,11 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-
-@app.route("/page1")
-def page1():
-    return "<p>page1</p>"
-
-@app.route("/page2")
-def page2():
-    return "<p>page2</p>"
-
-@app.route("/<name>")
-def changeURL(name):
-    return f"<p>Hello,{name}</p>"
-
-
+def hello_template():
+    return render_template('index.html')
 
 if __name__=="__main__":
     app.run()
