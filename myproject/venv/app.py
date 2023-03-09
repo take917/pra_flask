@@ -14,5 +14,11 @@ def page1():
 def page2():
     return "<p>page2</p>"
 
+@app.route("/<name>")
+def changeURL(name):
+    return f"<p>Hello,{name}</p>"
+
+
+
 if __name__=="__main__":
     app.run()
