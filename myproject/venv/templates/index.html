@@ -7,7 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hello</h1>
-    <p>アイウエオ</p>
+    <h1>{{name}}</h1>
+    <p>リストの出力</p>
+    {% for test_msg in list %}
+        {% if loop.index % 2==0 %}
+        <li>{{test_msg}}</li>
+        {%endif%}
+   
+    
+    {% endfor %}
 </body>
 </html>
