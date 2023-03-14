@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>{{name}}</h1>
-    <p>リストの出力</p>
-    {% for test_msg in list %}
-        {% if loop.index % 2==0 %}
-        <li>{{test_msg}}</li>
-        {%endif%}
-   
-    
-    {% endfor %}
-</body>
-</html>
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>メモアプリ</h1>
+    <article>
+        <h1>メモ1</h1>
+        <p>メモ1の内容</p>
+    </article>
+    <article>
+        <h1>メモ2</h1>
+        <p>メモ2の内容</p>
+    </article>
+
+{% endblock %}
