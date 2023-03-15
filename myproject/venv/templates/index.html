@@ -3,13 +3,20 @@
 
 {% block content %}
 <h1>メモアプリ</h1>
-    <article>
-        <h1>メモ1</h1>
-        <p>メモ1の内容</p>
-    </article>
-    <article>
-        <h1>メモ2</h1>
-        <p>メモ2の内容</p>
-    </article>
-
+    {% if memo_list == []%}
+        <p>メモは登録させていません</p>
+        {% else %}
+        <table border="1">
+            <tr>
+                <th>タイトル</th>
+                <th>メモ</th>
+            </tr>
+            {% for memo in memo_list %}
+            <tr>
+                <td>{{memo.title}}</td>
+                <td>{{memo.body}}</td>
+            </tr>
+            {% endfor %}    
+        </table>
+        {% endif %}
 {% endblock %}
